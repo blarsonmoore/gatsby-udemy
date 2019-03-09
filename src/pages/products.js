@@ -7,7 +7,7 @@ export default function products({ data }) {
   console.log(data)
   return (
     <Layout>
-      <h1>Our Products</h1>
+      <h1 style={{ color: 'red' }}>Our Products</h1>
       {data.products.edges.map(({ node: product }) => {
         return (
           <div key={product.id} style={{ padding: '1rem', margin: '1rem 0' }}>
